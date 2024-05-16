@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.black-bg {
+    background-color: #1A242F;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .users-table th, .users-table td {
+    height: 50px;    
+    padding: 0 10px;
+    text-align: left; 
+    color: #BCBCC3;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  } 
+  
+  .status-wrapper {
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 10px;
+    border-radius: 50px;
+    background-color: green;
+  }
+  
+  .gray-bg {
+    background-color:  #1A242F;
+  }
+
+  .action-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  .action-btn-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  .action-btns button{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    background-color: transparent;
+    border-style: none;
+  }
+  
+   .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 25px;
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagination-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: blueviolet;
+  }
+  
+  .pagination-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:not(:last-child) {
+    margin-right: 5px;
+  }  
+
+  .test{
+    margin-left: 25px;
+    color: #BCBCC3;
+    font-size: 18px;
+  }
+  

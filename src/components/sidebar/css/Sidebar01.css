@@ -1,0 +1,51 @@
+  .sidebar-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 20px; 
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    height: 80px;
+  }
+  
+  .menu-icons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-icons a {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black; 
+  }
+  
+  .menu-icons a img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .menu-icons a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu-icons a.selected {    
+    background-color: rgb(64, 64, 153);
+    color: white; /* Set icon color for selected state */
+  }
+  
+  

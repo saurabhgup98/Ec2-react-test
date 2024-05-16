@@ -1,0 +1,138 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.input-container {
+    position: relative;
+    width: 100%;    
+}
+  
+  .input-box { 
+    position: relative;   
+    background-color: transparent;
+    width: 92%;
+    height: 20px;
+    padding: 25px 15px 10px 15px;      
+    font-size: 16px;
+    border: 1px solid #374151;
+    transition: border-color 0.5s ease;
+    color: #768E94;
+    font-family: "Inter", sans-serif;
+    font-size: 16px; 
+    font-family: 400;   
+    border-radius: 5px;     
+  }
+
+  .input-box:focus {
+    outline: none;
+    border: 1px solid blue;
+  }
+  
+  .input-box::placeholder {    
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translate(-50%, 100%);
+    font-size: 16px;
+    color: wheat;
+    transition: transform 1s ease;
+  }
+
+.input-container:hover .input-box::placeholder,
+.input-box:focus::placeholder {
+  transform: translate(-50%, -10px); 
+  transition: transform 1s ease;
+}
+  
+.input-box:hover,
+.input-box:focus {
+  border-color: blue;
+}
+
+  .label {
+    position: absolute;
+    top: 55%;
+    left: 15px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    color: #d5dfe2;
+    transform: translateY(-45%);
+    transition: font-size 1s ease, top 1s ease;
+  }  
+  
+  .label.label-hovered,
+  .input-box:focus ~ .label,
+  .input-box:focus ~ ::placeholder,
+  .input-box:not(:placeholder-shown) ~ .label {
+    font-size: 10px;
+    top: 15px;
+    font-weight: 800;        
+  }
+
+  */
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-box {
+  position: relative;
+  background-color: transparent;
+  width: 92%;
+  height: 20px;
+  padding: 25px 15px 10px 15px;
+  font-size: 16px;
+  border: 1px solid #374151;
+  transition: border-color 0.5s ease;
+  color: #768E94;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-family: 400;
+  border-radius: 5px;
+}
+
+.input-box:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+
+.input-box::placeholder {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  transform: translateY(100%);
+  font-size: 16px;
+  color: wheat;
+  transition: transform 1s ease;
+}
+
+.input-container:hover .input-box::placeholder,
+.input-box:focus::placeholder {
+  transform: translateY(-10px); /* Move placeholder up */
+}
+
+.input-box:hover,
+.input-box:focus {
+  border-color: blue;
+}
+
+.label {
+  position: absolute;
+  top: 55%;
+  left: 15px;
+  padding-bottom: 4px;
+  font-size: 18px;
+  color: #768E94;
+  transform: translateY(-45%);
+  transition: font-size 1s ease, top 1s ease;
+}
+
+.label.label-hovered,
+.input-box:focus ~ .label,
+.input-box:focus ~ ::placeholder,
+.input-box:not(:placeholder-shown) ~ .label {
+  font-size: 10px;
+  top: 15px;
+  font-weight: 800;
+}
